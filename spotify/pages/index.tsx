@@ -3,7 +3,7 @@ import Centre from '../components/Centre';
 export default function Home() {
   return (
     <div className=' bg-black h-screen overflow-hidden'>
-      <main className='flex'>
+      <main className='flex text-white'>
         <Sidebar/>
         <Centre/>
       </main>
