@@ -8,12 +8,13 @@ const scopes = [
     "user-read-private",
     "user-library-read",
     "user-top-read",
-//    "user-library-modify",
+   "user-library-modify",
     "user-read-playback-state",
     "user-modify-playback-state",
     "user-read-current-playing",
     "user-read-recently-played",
-    "user-follow-read"
+    "user-follow-read",
+    "user-follow-modify"
 ].join(',');
 
 const params={
