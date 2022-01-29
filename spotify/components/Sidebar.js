@@ -29,11 +29,6 @@ function Sidebar() {
     md:inline-flex'
     >
       <div className='space-y-4'>
-      <button className='flex items-center space-x-3 hover:text-white'
-        onClick={()=>signOut()}
-      >
-          <p>Log Out</p>
-      </button>
         <button className='flex items-center space-x-3 hover:text-white'>
           <HomeIcon className='h-5 w-5'/>
           <p>Home</p>
