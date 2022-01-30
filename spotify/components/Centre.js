@@ -33,7 +33,7 @@ function Centre() {
     spotifyApi.getPlaylist(playlistId).then((data) =>{
       setPlaylist(data.body);
     })
-    .catch(err => console.log("something went wrong!", err));
+    .catch((err) => console.log("something went wrong!", err));
 }, [spotifyApi, playlistId]);
   
 
@@ -53,14 +53,13 @@ function Centre() {
 
     <section className={`flex items-end space-x-7 bg-gradient-to-b to-black 
    ${color} h-80 text-white  w-full`}>
-      <img className='h-52 p-8 w-52 shadow-2xl ' src={playlist?.images?.[0].url} alt=''/>
+      <img className='h-full p-8 w-70 shadow-2xl ' src={playlist?.images?.[0].url} alt=''/>
       <div>
-        <p>PLAYLIST</p>
+        <p className='pl-8 pb-0'>PLAYLIST</p>
         <h1 className='p-8 text-2xl md:text-3xl xl:text-5xl font-bold'>{playlist?.name}</h1>
       </div>
     </section>
     <div>
-    <Songs/>
     </div>
   </div>
   );
